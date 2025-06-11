@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  max-width: 375px;
+  margin: 200px auto 0;
+
+  align-self: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 240px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.container__row {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.badge {
+  border-radius: 99px;
+  display: flex;
+  align-items: center;
+}
+
+.badge_size_sm {
+  padding: 2px 6px;
+  text-align: center;
+
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1rem;
+}
+.badge_size_md {
+  padding: 2px 8px;
+  text-align: center;
+
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+}
+.badge_size_lg {
+  padding: 2px 10px;
+  background: #F9FAFB;
+}
+
+.badge_color_neutral {
+  background-color: #F9FAFB;
+  color: #525252;
+  border: 1px solid #E5E5E5;
+}
+.badge_color_danger {
+  border: 1px solid #FECACA;
+  background: #FEF2F2;
+  color: #DC2626;
+}
+.badge_color_warning {
+  border: 1px solid #FDE68A;
+  background: #FFFBEB;
+  color: #B45309;
+}
+.badge_color_success {
+  color: #15803D;
+  border: 1px solid #BBF7D0;
+  background: #F0FDF4;
+}
+.badge_color_brand {
+  color: #4338CA;
+  border: 1px solid #C7D2FE;
+  background: #EEF2FF;
+}
